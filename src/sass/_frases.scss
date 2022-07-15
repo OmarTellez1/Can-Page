@@ -1,0 +1,570 @@
+$colorP: #E0E0C1;
+
+#section-frases{
+    background-color:hsl(240, 3%, 16%);
+    height: 1025px;
+    width:100%;
+     .h2-frase{
+        color: white;
+        text-align: start;
+        font-size:40px;
+        margin-inline-start: 25px;
+    }
+    .p-frase{
+        color: $colorP;
+        margin-inline-start: 25px;
+        font-size: 21px;
+        margin-inline-end: 26px;
+    }
+    /* From cssbuttons.io by @alexroumi */
+    button {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ margin-block-start: 40px;
+ margin-inline-start: 55px;
+ -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+ -ms-border-radius: 15px;
+ -o-border-radius: 15px;
+ cursor: pointer;
+ 
+ 
+    }
+    button a{
+        text-decoration: none;
+        color: black;
+         font-family: 'Rubik', sans-serif;
+    }
+
+button::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: hsl(0, 0%, 8%);
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ -webkit-transition: all 250ms;
+ -moz-transition: all 250ms;
+ -ms-transition: all 250ms;
+ -o-transition: all 250ms;
+
+
+}
+
+
+button:hover a{
+    color: white;
+}
+
+button:hover::before {
+ width: 100%;
+}
+ .parrafo::selection{
+                background-color: black;
+            }
+}
+   
+    #frases1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-block-start: 30px;
+        place-items: center;
+        row-gap: 50px;
+    .frases{
+        display: grid;
+        position: relative;
+        width:350px;
+        height:220px;
+        outline: 1px solid gray;
+        opacity: 0.9;
+        background-color: black;
+       overflow: hidden;
+        border-radius:10px ;
+        -webkit-border-radius:10px ;
+        -moz-border-radius:10px ;
+        -ms-border-radius:10px ;
+        -o-border-radius:10px ;
+       box-shadow: 0 19px 15px rgba( 0,0,0, 1); 
+       font-family: 'Trispace', sans-serif;
+        cursor: pointer;
+               .texto-1{
+            display: block;
+            color: white;
+           font-size:22px;
+            margin-inline-start: 4px;
+        }
+        .texto-2{
+            align-self: flex-end;
+        }
+      
+}
+ .parrafo::selection{
+                background-color: gray;
+            }
+            
+      
+        .frases::after{
+            content: ""; 
+            background-image: url('https://w0.peakpx.com/wallpaper/810/487/HD-wallpaper-vida-y-muerte-can-canserbero-latino-rap-raplatino-vidaymuerte-thumbnail.jpg');
+            background-position: 50px -140px;
+           background-size: 240px;
+            background-repeat: no-repeat;
+            clip-path: circle(55%);
+            opacity: 0.3; 
+            top: 0; left: 0; bottom: 0; right: 0; 
+            position: absolute; 
+           z-index: -1;
+        }
+        .frases:hover{
+            animation: pulse 5500ms infinite linear;
+            -webkit-animation: pulse 5500ms infinite linear;
+}
+    
+       
+  }
+  @keyframes pulse {
+  0%{
+     box-shadow: 5px 3px 15px 3px rgba( 0,0,0, 1); 
+  }
+  25%{
+   box-shadow: 5px 25px 55px 18px rgba( 0,0,0, 1); 
+  }
+  35%{
+   box-shadow: 10px 25px 55px 25px rgba( 0,0,0, 1); 
+  }
+  45%{
+   box-shadow: 0px 25px 55px 18px rgba( 0,0,0, 1); 
+  }
+  55%{
+   box-shadow: 10px 25px 55px 25px rgba( 0,0,0, 1); 
+  }
+  65%{
+   box-shadow: 10px 25px 55px 25px rgba( 0,0,0, 1); 
+  }
+  75%{
+   box-shadow: 0px 25px 55px 18px rgba( 0,0,0, 1); 
+  }
+  85%{
+   box-shadow: 10px 25px 55px 25px rgba( 0,0,0, 1); 
+  }
+  95%{
+   box-shadow: 5px 25px 55px 18px rgba( 0,0,0, 1); 
+  }
+   100%{
+     box-shadow: 3px 3px 15px 3px rgba( 0,0,0, 1); 
+  }
+ 
+
+  
+}
+/*--------------------------------------------RESPONSIVE IGNORAR------------------------------------ */
+@media (max-width:1550px){
+          #section-frases{
+            
+            button{
+                margin-inline-start: 79px;
+                
+           }
+        }}
+          @media (max-width:1440px){
+          #section-frases{
+            
+            button{
+                margin-inline-start: 65px;
+                
+           }
+        }}
+          @media (max-width:1350px){
+          #section-frases{
+            
+            button{
+                margin-inline-start: 50px;
+                
+           }
+        }}
+        @media (max-width:1250px){
+          #section-frases{
+            
+            button{
+                margin-inline-start: 35px;
+                
+           }
+        }}
+          @media (max-width:1180px){
+          #section-frases{
+           
+            button{
+                margin-inline-start: 25px;
+                
+           }
+        }}
+@media (max-width:1160px){
+    #section-frases{
+        height: 1050px;
+    }
+}
+@media (max-width:897px){
+    #section-frases{
+        height: 1060px;
+    }
+}
+
+
+
+  /*----------------------------------------Inicio responsive completo----------------------------------------------------------------*/      
+  @media (max-width:1175px){
+     #frases1{
+         .frases{
+         width: 330px;
+         .texto-1{
+             font-size:19px;
+         }
+     } 
+     }
+  } 
+   @media (max-width:1095px){
+     #frases1{
+         .frases{
+         width: 310px;
+
+         .texto-1{
+             font-size:19px;
+         }
+     } 
+     .frases::after{
+         content:"";
+         background-position:50px -110px ;
+          background-size: 210px;
+     }
+
+     }
+  } 
+   @media (max-width:995px){
+     #frases1{
+         .frases{
+         width: 290px;
+
+         .texto-1{
+             font-size:19px;
+         }
+     }
+     .frases::after{
+         content:"";
+         background-position:40px -105px ;
+          background-size: 210px;
+     }
+
+    }}  
+     @media (max-width:950px){
+     #frases1{
+         .frases{
+         width: 270px;
+
+         .texto-1{
+             font-size:18px;
+         }
+     }
+     .frases::after{
+         content:"";
+         background-position:30px -105px ;
+          background-size: 210px;
+     }
+
+    }}  
+     @media (max-width:900px){
+                   #section-frases{
+           height: 100%;
+            button{
+                margin-block-end: 20px;
+                
+            }
+        }
+
+     #frases1{
+         .frases{
+         width: 250px;
+
+         .texto-1{
+             font-size:17px;
+         }
+     }
+     .frases::after{
+         content:"";
+         background-position:20px -105px ;
+          background-size: 210px;
+     }
+
+    }}  
+      @media (max-width:820px){
+         
+     #frases1{
+         .frases{
+         width: 230px;
+
+         .texto-1{
+             font-size:16px;
+         }
+     }
+     .frases::after{
+         content:"";
+         background-position:10px -105px ;
+          background-size: 210px;
+     }
+
+    }} 
+    @media (max-width:790px){
+        #section-frases{
+            height:100%;
+            button{
+                margin-block-start: 0px;
+            }
+        }
+
+        #frases1{
+            grid-template-columns: repeat(2, 1fr);
+            .frases{
+                width:300px;
+                .texto-1{
+                    font-size:18px;
+                }
+            }
+            .frase-final{
+                margin-block-end: 30px;
+            }
+            .frases::after{
+            content:"";
+            background-position:45px -105px ;
+            background-size: 210px;
+     }
+     
+     .frase-final{
+         grid-column: 1/3;
+         
+     }
+    
+        }
+        
+    }
+     @media (max-width:690px){
+          #section-frases{
+            height:100%;
+            button{
+                margin-block-start: 20px;
+                
+           }
+        }
+
+     #frases1{
+         .frases{
+         width: 280px;
+         .texto-1{
+             font-size:18px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:35px -105px ;
+            background-size: 210px;
+     }
+     }
+  } 
+    @media (max-width:630px){
+     #frases1{
+         .frases{
+         width: 260px;
+         .texto-1{
+             font-size:17px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:33px -90px ;
+            background-size: 195px;
+     }
+     }
+  }
+    @media (max-width:610px){
+     #frases1{
+         .frases{
+         width: 240px;
+         .texto-1{
+             font-size:16px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:23px -90px ;
+            background-size: 195px;
+     }
+     }
+  }
+    @media (max-width:550px){
+     #frases1{
+         .frases{
+         width: 230px;
+         .texto-1{
+             font-size:16px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:15px -90px ;
+            background-size: 195px;
+     }
+     }
+  }
+    @media (max-width:530px){
+     #frases1{
+         .frases{
+         width: 220px;
+         .texto-1{
+             font-size:16px;
+         }
+     }
+     .frases::after{
+            content:"";
+            background-position:15px -90px ;
+            background-size: 190px;
+     }
+      
+     }
+  }
+    @media (max-width:490px){
+     #frases1{
+         .frases{
+         width: 210px;
+         .texto-1{
+             font-size:15px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:10px -90px ;
+            background-size: 190px;
+     }
+     }
+  }
+    @media (max-width:460px){
+        
+     #frases1{
+        grid-template-columns: 1fr;
+        .frases{
+            width: 380px;
+            height:230px;
+            .texto-1{
+                font-size:22px;
+            }
+        }
+        .frases::after{
+            content:"";
+            background-position:85px -105px ;
+            background-size: 210px;
+     }
+
+        .frase-final{
+            grid-column: 1/1;
+        }
+        
+     }
+  }
+   @media (max-width:425px){
+     #frases1{
+         .frases{
+         width: 350px;
+         .texto-1{
+             font-size:20px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:68px -105px ;
+            background-size: 210px;
+     }
+     }
+  }
+    @media (max-width:400px){
+     #frases1{
+         .frases{
+         width: 340px;
+         .texto-1{
+             font-size:20px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:65px -105px ;
+            background-size: 210px;
+     }
+     }
+  }
+  @media (max-width:385px){
+     #frases1{
+         .frases{
+         width: 310px;
+         .texto-1{
+             font-size:20px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:50px -105px ;
+            background-size: 210px;
+     }
+     }
+  }
+   @media (max-width:350px){
+     #frases1{
+         .frases{
+         width: 290px;
+         .texto-1{
+             font-size:18px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:40px -105px ;
+            background-size: 210px;
+     }
+     }
+  }
+    @media (max-width:333px){
+     #frases1{
+         .frases{
+         width: 270px;
+         .texto-1{
+             font-size:17px;
+         }
+     } 
+     .frases::after{
+            content:"";
+            background-position:30px -105px ;
+            background-size: 210px;
+     }
+     }
+  }
+
+         
+
+    
+   
+   
+
+    
+

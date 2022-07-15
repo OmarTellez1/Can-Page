@@ -1,0 +1,112 @@
+#footer{
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: center;
+    .omar{
+        margin-inline-start: 25px;
+        font-size:26px;
+        font-family: 'Bai Jamjuree', sans-serif;
+    }
+    .redes{
+        text-align: end;
+        margin-inline-end: 25px;
+        font-size:30px;
+        a{
+            color: white;
+        }
+        .instagram{
+            padding-right: 15px;
+        }
+    }
+ 
+}
+@media (prefers-color-scheme: light) {
+   :root {
+       #container1{
+        background-color: black;
+    }
+    #container2{
+        background-color:#202022;
+    }
+    #s-discos{
+        background-color:hsl(240, 3%, 14%);
+    }
+    #section-frases{
+    background-color:hsl(240, 3%, 16%);
+}
+    
+    #footer{
+        background-color: black;
+    }
+
+   }}
+   @media (prefers-color-scheme: dark) {
+   :root {
+       #container1{
+        background-color: black;
+    }
+    #container2{
+        background-color:#202022;
+    }
+    #s-discos{
+        background-color:hsl(240, 3%, 14%);
+    }
+    #section-frases{
+    background-color:hsl(240, 3%, 12%);
+}
+    
+    #footer{
+        background-color: black;
+    }
+
+   }}
+
+
+@media (max-width:729px){
+    #footer{
+        grid-template-columns: 70% 30%;
+    }
+}
+@media (max-width:627px){
+    #footer{
+        height:90px;
+        grid-template-columns: 1fr;
+        text-align: center;
+        .omar{
+            margin-inline-start: 10px;
+        }
+        .redes{
+            text-align: center;
+            margin-inline-end: 0px;
+        }
+    }
+}
+@media (max-width:460px){
+    #footer{
+        .omar{
+            margin-inline-start: 5px;
+            font-size:22px;
+        }
+    }
+}
+@media (max-width:380px){
+    #footer{
+        .omar{
+            margin-inline-start: 2px;
+            font-size:20px;
+        }
+    }
+}
+@media (max-width:330px){
+    #footer{
+        .omar{
+            margin-inline-start: 1px;
+            font-size:18px;
+        }
+    }
+}
